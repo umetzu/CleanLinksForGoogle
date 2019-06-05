@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5A46AE922A8361C008F1C92 /* CleanLinksForGoogle.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = B5A46AE822A8361C008F1C92 /* CleanLinksForGoogle.entitlements */; };
+		B5A46AEB22A8361C008F1C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A46AEA22A8361C008F1C92 /* AppDelegate.swift */; };
+		B5A46AEE22A8361C008F1C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A46AEC22A8361C008F1C92 /* Main.storyboard */; };
+		B5A46AF022A8361C008F1C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A46AEF22A8361C008F1C92 /* ViewController.swift */; };
+		B5A46AF222A8361D008F1C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A46AF122A8361D008F1C92 /* Assets.xcassets */; };
+		B5A46AF922A8361D008F1C92 /* CleanLinksForGoogle Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B5A46AF822A8361D008F1C92 /* CleanLinksForGoogle Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5A46AFE22A8361D008F1C92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A46AFD22A8361D008F1C92 /* Cocoa.framework */; };
+		B5A46B0122A8361D008F1C92 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A46B0022A8361D008F1C92 /* SafariExtensionHandler.swift */; };
+		B5A46B0322A8361D008F1C92 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A46B0222A8361D008F1C92 /* SafariExtensionViewController.swift */; };
+		B5A46B0622A8361D008F1C92 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A46B0422A8361D008F1C92 /* SafariExtensionViewController.xib */; };
+		B5A46B0922A8361D008F1C92 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = B5A46B0822A8361D008F1C92 /* script.js */; };
+		B5A46B0B22A8361D008F1C92 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5A46B0A22A8361D008F1C92 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5A46AFA22A8361D008F1C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5A46ADD22A8361C008F1C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A46AF722A8361D008F1C92;
+			remoteInfo = "CleanLinksForGoogle Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5A46B1222A8361D008F1C92 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B5A46AF922A8361D008F1C92 /* CleanLinksForGoogle Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B5A46AE522A8361C008F1C92 /* CleanLinksForGoogle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanLinksForGoogle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A46AE822A8361C008F1C92 /* CleanLinksForGoogle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanLinksForGoogle.entitlements; sourceTree = "<group>"; };
+		B5A46AEA22A8361C008F1C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5A46AED22A8361C008F1C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5A46AEF22A8361C008F1C92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5A46AF122A8361D008F1C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5A46AF322A8361D008F1C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A46AF822A8361D008F1C92 /* CleanLinksForGoogle Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CleanLinksForGoogle Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A46AFD22A8361D008F1C92 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B5A46B0022A8361D008F1C92 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		B5A46B0222A8361D008F1C92 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		B5A46B0522A8361D008F1C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		B5A46B0722A8361D008F1C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A46B0822A8361D008F1C92 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		B5A46B0A22A8361D008F1C92 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		B5A46B0C22A8361D008F1C92 /* CleanLinksForGoogle_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanLinksForGoogle_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5A46AE222A8361C008F1C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A46AF522A8361D008F1C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A46AFE22A8361D008F1C92 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5A46ADC22A8361C008F1C92 = {
+			isa = PBXGroup;
+			children = (
+				B5A46AE722A8361C008F1C92 /* CleanLinksForGoogle */,
+				B5A46AFF22A8361D008F1C92 /* CleanLinksForGoogle Extension */,
+				B5A46AFC22A8361D008F1C92 /* Frameworks */,
+				B5A46AE622A8361C008F1C92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A46AE622A8361C008F1C92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5A46AE522A8361C008F1C92 /* CleanLinksForGoogle.app */,
+				B5A46AF822A8361D008F1C92 /* CleanLinksForGoogle Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A46AE722A8361C008F1C92 /* CleanLinksForGoogle */ = {
+			isa = PBXGroup;
+			children = (
+				B5A46AE822A8361C008F1C92 /* CleanLinksForGoogle.entitlements */,
+				B5A46AEA22A8361C008F1C92 /* AppDelegate.swift */,
+				B5A46AEC22A8361C008F1C92 /* Main.storyboard */,
+				B5A46AEF22A8361C008F1C92 /* ViewController.swift */,
+				B5A46AF122A8361D008F1C92 /* Assets.xcassets */,
+				B5A46AF322A8361D008F1C92 /* Info.plist */,
+			);
+			path = CleanLinksForGoogle;
+			sourceTree = "<group>";
+		};
+		B5A46AFC22A8361D008F1C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5A46AFD22A8361D008F1C92 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A46AFF22A8361D008F1C92 /* CleanLinksForGoogle Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5A46B0022A8361D008F1C92 /* SafariExtensionHandler.swift */,
+				B5A46B0222A8361D008F1C92 /* SafariExtensionViewController.swift */,
+				B5A46B0422A8361D008F1C92 /* SafariExtensionViewController.xib */,
+				B5A46B0722A8361D008F1C92 /* Info.plist */,
+				B5A46B0822A8361D008F1C92 /* script.js */,
+				B5A46B0A22A8361D008F1C92 /* ToolbarItemIcon.pdf */,
+				B5A46B0C22A8361D008F1C92 /* CleanLinksForGoogle_Extension.entitlements */,
+			);
+			path = "CleanLinksForGoogle Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5A46AE422A8361C008F1C92 /* CleanLinksForGoogle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A46B1322A8361D008F1C92 /* Build configuration list for PBXNativeTarget "CleanLinksForGoogle" */;
+			buildPhases = (
+				B5A46AE122A8361C008F1C92 /* Sources */,
+				B5A46AE222A8361C008F1C92 /* Frameworks */,
+				B5A46AE322A8361C008F1C92 /* Resources */,
+				B5A46B1222A8361D008F1C92 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A46AFB22A8361D008F1C92 /* PBXTargetDependency */,
+			);
+			name = CleanLinksForGoogle;
+			productName = CleanLinksForGoogle;
+			productReference = B5A46AE522A8361C008F1C92 /* CleanLinksForGoogle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5A46AF722A8361D008F1C92 /* CleanLinksForGoogle Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A46B0F22A8361D008F1C92 /* Build configuration list for PBXNativeTarget "CleanLinksForGoogle Extension" */;
+			buildPhases = (
+				B5A46AF422A8361D008F1C92 /* Sources */,
+				B5A46AF522A8361D008F1C92 /* Frameworks */,
+				B5A46AF622A8361D008F1C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CleanLinksForGoogle Extension";
+			productName = "CleanLinksForGoogle Extension";
+			productReference = B5A46AF822A8361D008F1C92 /* CleanLinksForGoogle Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5A46ADD22A8361C008F1C92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Umetzu;
+				TargetAttributes = {
+					B5A46AE422A8361C008F1C92 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					B5A46AF722A8361D008F1C92 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B5A46AE022A8361C008F1C92 /* Build configuration list for PBXProject "CleanLinksForGoogle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5A46ADC22A8361C008F1C92;
+			productRefGroup = B5A46AE622A8361C008F1C92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5A46AE422A8361C008F1C92 /* CleanLinksForGoogle */,
+				B5A46AF722A8361D008F1C92 /* CleanLinksForGoogle Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5A46AE322A8361C008F1C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A46AE922A8361C008F1C92 /* CleanLinksForGoogle.entitlements in Resources */,
+				B5A46AF222A8361D008F1C92 /* Assets.xcassets in Resources */,
+				B5A46AEE22A8361C008F1C92 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A46AF622A8361D008F1C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A46B0B22A8361D008F1C92 /* ToolbarItemIcon.pdf in Resources */,
+				B5A46B0622A8361D008F1C92 /* SafariExtensionViewController.xib in Resources */,
+				B5A46B0922A8361D008F1C92 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5A46AE122A8361C008F1C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A46AF022A8361C008F1C92 /* ViewController.swift in Sources */,
+				B5A46AEB22A8361C008F1C92 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A46AF422A8361D008F1C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A46B0322A8361D008F1C92 /* SafariExtensionViewController.swift in Sources */,
+				B5A46B0122A8361D008F1C92 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5A46AFB22A8361D008F1C92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5A46AF722A8361D008F1C92 /* CleanLinksForGoogle Extension */;
+			targetProxy = B5A46AFA22A8361D008F1C92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5A46AEC22A8361C008F1C92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A46AED22A8361C008F1C92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5A46B0422A8361D008F1C92 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A46B0522A8361D008F1C92 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5A46B0D22A8361D008F1C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5A46B0E22A8361D008F1C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B5A46B1022A8361D008F1C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CleanLinksForGoogle Extension/CleanLinksForGoogle_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NP536EQGR6;
+				INFOPLIST_FILE = "CleanLinksForGoogle Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umetzu.CleanLinksForGoogle-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B5A46B1122A8361D008F1C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CleanLinksForGoogle Extension/CleanLinksForGoogle_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NP536EQGR6;
+				INFOPLIST_FILE = "CleanLinksForGoogle Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.umetzu.CleanLinksForGoogle-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B5A46B1422A8361D008F1C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CleanLinksForGoogle/CleanLinksForGoogle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NP536EQGR6;
+				INFOPLIST_FILE = CleanLinksForGoogle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B5A46B1522A8361D008F1C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CleanLinksForGoogle/CleanLinksForGoogle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NP536EQGR6;
+				INFOPLIST_FILE = CleanLinksForGoogle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5A46AE022A8361C008F1C92 /* Build configuration list for PBXProject "CleanLinksForGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A46B0D22A8361D008F1C92 /* Debug */,
+				B5A46B0E22A8361D008F1C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A46B0F22A8361D008F1C92 /* Build configuration list for PBXNativeTarget "CleanLinksForGoogle Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A46B1022A8361D008F1C92 /* Debug */,
+				B5A46B1122A8361D008F1C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A46B1322A8361D008F1C92 /* Build configuration list for PBXNativeTarget "CleanLinksForGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A46B1422A8361D008F1C92 /* Debug */,
+				B5A46B1522A8361D008F1C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5A46ADD22A8361C008F1C92 /* Project object */;
+}
