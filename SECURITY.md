@@ -10,4 +10,4 @@
 
 ## Reporting a Vulnerability
 
-
+cleanlinksforgoogle@umetzu.com
