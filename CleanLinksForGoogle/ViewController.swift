@@ -9,22 +9,22 @@
 import Cocoa
 import SafariServices.SFSafariApplication
 
-class ViewController: NSViewController {
-
-    @IBOutlet var appNameLabel: NSTextField!
+class ViewController: NSViewController, NSWindowDelegate	 {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.appNameLabel.stringValue = "CleanLinksForGoogle";
     }
     
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: "com.umetzu.CleanLinksForGoogle-Extension") { error in
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: "com.umetzu.CleanLinksForGoogle.Extension") { error in
             if let _ = error {
-                // Insert code to inform the user that something went wrong.
 
             }
         }
     }
-
+    
+    @IBAction func openAuthorWebsite(_ sender: AnyObject?) {
+        let url = URL(string: "https://www.umetzu.com")!
+        NSWorkspace.shared.open(url)
+    }
 }

@@ -18,7 +18,6 @@
 		B5A46B0322A8361D008F1C92 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A46B0222A8361D008F1C92 /* SafariExtensionViewController.swift */; };
 		B5A46B0622A8361D008F1C92 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A46B0422A8361D008F1C92 /* SafariExtensionViewController.xib */; };
 		B5A46B0922A8361D008F1C92 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = B5A46B0822A8361D008F1C92 /* script.js */; };
-		B5A46B0B22A8361D008F1C92 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5A46B0A22A8361D008F1C92 /* ToolbarItemIcon.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		B5A46B0522A8361D008F1C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		B5A46B0722A8361D008F1C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A46B0822A8361D008F1C92 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		B5A46B0A22A8361D008F1C92 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		B5A46B0C22A8361D008F1C92 /* CleanLinksForGoogle_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanLinksForGoogle_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,7 +129,6 @@
 				B5A46B0422A8361D008F1C92 /* SafariExtensionViewController.xib */,
 				B5A46B0722A8361D008F1C92 /* Info.plist */,
 				B5A46B0822A8361D008F1C92 /* script.js */,
-				B5A46B0A22A8361D008F1C92 /* ToolbarItemIcon.pdf */,
 				B5A46B0C22A8361D008F1C92 /* CleanLinksForGoogle_Extension.entitlements */,
 			);
 			path = "CleanLinksForGoogle Extension";
@@ -228,7 +225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A46B0B22A8361D008F1C92 /* ToolbarItemIcon.pdf in Resources */,
 				B5A46B0622A8361D008F1C92 /* SafariExtensionViewController.xib in Resources */,
 				B5A46B0922A8361D008F1C92 /* script.js in Resources */,
 			);
@@ -404,7 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "CleanLinksForGoogle Extension/CleanLinksForGoogle_Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NP536EQGR6;
 				INFOPLIST_FILE = "CleanLinksForGoogle Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -412,8 +408,10 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.umetzu.CleanLinksForGoogle-Extension";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "macOS Debug Profile";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -423,7 +421,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "CleanLinksForGoogle Extension/CleanLinksForGoogle_Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = NP536EQGR6;
 				INFOPLIST_FILE = "CleanLinksForGoogle Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -431,8 +430,10 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.umetzu.CleanLinksForGoogle-Extension";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "macOs Distribution Extension Profile";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -444,7 +445,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CleanLinksForGoogle/CleanLinksForGoogle.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NP536EQGR6;
 				INFOPLIST_FILE = CleanLinksForGoogle/Info.plist;
@@ -452,8 +453,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "macOS Debug Profile";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -464,7 +467,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CleanLinksForGoogle/CleanLinksForGoogle.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NP536EQGR6;
 				INFOPLIST_FILE = CleanLinksForGoogle/Info.plist;
@@ -472,8 +476,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "macOs Distribution Profile";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
