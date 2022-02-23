@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5A46AE922A8361C008F1C92 /* CleanLinksForGoogle.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = B5A46AE822A8361C008F1C92 /* CleanLinksForGoogle.entitlements */; };
 		B5A46AEB22A8361C008F1C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A46AEA22A8361C008F1C92 /* AppDelegate.swift */; };
 		B5A46AEE22A8361C008F1C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A46AEC22A8361C008F1C92 /* Main.storyboard */; };
 		B5A46AF022A8361C008F1C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A46AEF22A8361C008F1C92 /* ViewController.swift */; };
@@ -180,7 +179,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = Umetzu;
 				TargetAttributes = {
 					B5A46AE422A8361C008F1C92 = {
@@ -215,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A46AE922A8361C008F1C92 /* CleanLinksForGoogle.entitlements in Resources */,
 				B5A46AF222A8361D008F1C92 /* Assets.xcassets in Resources */,
 				B5A46AEE22A8361C008F1C92 /* Main.storyboard in Resources */,
 			);
@@ -333,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -389,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -404,7 +402,9 @@
 				CODE_SIGN_ENTITLEMENTS = "CleanLinksForGoogle Extension/CleanLinksForGoogle_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NP536EQGR6;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "CleanLinksForGoogle Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -412,6 +412,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -426,7 +427,9 @@
 				CODE_SIGN_ENTITLEMENTS = "CleanLinksForGoogle Extension/CleanLinksForGoogle_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NP536EQGR6;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "CleanLinksForGoogle Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,6 +437,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -451,13 +455,16 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NP536EQGR6;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CleanLinksForGoogle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -474,13 +481,16 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NP536EQGR6;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = CleanLinksForGoogle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umetzu.CleanLinksForGoogle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

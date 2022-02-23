@@ -23,13 +23,16 @@ if (window.top === window) {
 
     addEventListener("mousedown", function(e) {
         var a = anchorMatch(e.target),
-            m, h;
+            m, h, u;
         if (a && a.localName == "a") {
             m = a.getAttribute("onmousedown");
-            h = a.getAttribute("href");
+            m = a.getAttribute("onmousedown");
+            u = a.getAttribute("data-jsarwt");
             
             if (m && m.indexOf("return") == 0) {
                 a.removeAttribute("onmousedown");
+            } else if (u === "1") {
+                a.setAttribute("data-jsarwt", "0");
             } else if (h) {
                 if (h.indexOf("http://") == 0) h = h.substr(h.indexOf("/", 7));
                 if (h.indexOf("/url?") == 0) {
